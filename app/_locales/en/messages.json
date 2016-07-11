@@ -1,7 +1,7 @@
 {
   "appName": {
     "message": "colorShow",
-    "description": "The name of the application"
+    "description": "color Show"
   },
   "appDescription": {
     "message": "Color Show for a list of color codes",

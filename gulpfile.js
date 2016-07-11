@@ -169,13 +169,7 @@ gulp.task('chrome-extension', () => {
     .pipe(gulp.dest('dist/scripts'));
 });
 
-gulp.task('zip', (cb)=>{
-  return gulp.src('dist/*')
-    .pipe($.zip('extension.zip'))
-    .pipe(gulp.dest('dist'));
-})
-
-gulp.task('build', ['html', 'images', 'fonts', 'extras', 'chrome-extension', 'zip'], () => {
+gulp.task('build', ['html', 'images', 'fonts', 'extras', 'chrome-extension'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

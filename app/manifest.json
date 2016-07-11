@@ -1,6 +1,6 @@
 {
   "name": "ColorShow",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "manifest_version": 2,
   "description": "Color Show for a list of color codes",
   "icons": {
