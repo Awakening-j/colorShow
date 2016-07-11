@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "colorShow",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Color Show for a list of color codes",
+    "description": "Color Show for a list of color codes"
+  }
+}
