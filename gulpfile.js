@@ -164,9 +164,12 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('chrome-extension', () => {
-  return gulp.src(['app/scripts/background.js', 'app/scripts/chromereload.js'])
+gulp.task('chrome-extension', (cb) => {
+  gulp.src(['app/scripts/background.js', 'app/scripts/chromereload.js'])
     .pipe(gulp.dest('dist/scripts'));
+  gulp.src(['app/_locales/**/*']) 
+    .pipe(gulp.dest('dist/_locales'));
+  cb(null);
 });
 
 gulp.task('build', ['html', 'images', 'fonts', 'extras', 'chrome-extension'], () => {
